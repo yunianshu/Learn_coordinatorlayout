@@ -9,6 +9,7 @@ import android.view.View
 import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.databinding.DataBindingUtil
 import com.example.learn.R
+import com.example.learn.databinding.MerchantContentLayoutBinding
 import com.example.learn.databinding.MerchantSettleLayoutBinding
 import com.example.learn.dp
 import com.example.learn.view.stateRefresh
@@ -19,9 +20,9 @@ class MerchantSettleLayout(context: Context, attrs: AttributeSet?) : ConstraintL
     private var firstLayout: Boolean = false
     private var isExpanded = false // layContent 内容是否展开查看中
     private var effected: Float = 0f
-
+    lateinit var binding:MerchantSettleLayoutBinding
     init {
-        val view = LayoutInflater.from(context).inflate(R.layout.merchant_settle_layout, this)
+        binding = DataBindingUtil.inflate(LayoutInflater.from(context),R.layout.merchant_settle_layout,this,true)
     }
 
     private fun animViews(): Array<View> = arrayOf(this)

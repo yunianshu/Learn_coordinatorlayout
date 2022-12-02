@@ -37,8 +37,10 @@
             android:paddingRight="4dp"
             android:singleLine="true"
             android:textColor="#D04443"
-            android:textSize="12dp"
-            app:layout_constraintBottom_toBottomOf="parent"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/vBorder1"
+            app:layout_constraintEnd_toEndOf="@+id/vBorder1"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:ignore="MissingConstraints" />
 
@@ -48,7 +50,10 @@
             android:layout_height="match_parent"
             android:alpha="0"
             android:scaleX="0"
-            android:scaleY="0">
+            android:scaleY="0"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
 
             <TextView
                 android:id="@+id/vDetail1"
@@ -58,7 +63,7 @@
                 android:layout_marginLeft="12dp"
                 android:layout_marginBottom="4dp"
                 android:textColor="#FFF"
-                android:textSize="20dp"
+                android:textSize="20sp"
                 app:layout_constraintBottom_toTopOf="@id/vDetail2"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
@@ -71,7 +76,7 @@
                 android:layout_marginStart="12dp"
                 android:layout_marginLeft="12dp"
                 android:textColor="#FFF"
-                android:textSize="11dp"
+                android:textSize="11sp"
                 app:layout_constraintBottom_toTopOf="@id/vDetail3"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/vDetail1" />

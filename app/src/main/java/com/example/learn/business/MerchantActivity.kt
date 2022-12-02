@@ -15,6 +15,6 @@ class MerchantActivity : BaseActivity() {
     }
 
     private fun initialView() {
-//        findViewById<MerchantContentLayout>(R.id.layContent).laySettle = findViewById(R.id.laySettle)
+        findViewById<MerchantContentLayout>(R.id.layContent).laySettle = findViewById(R.id.laySettle)
     }
 }

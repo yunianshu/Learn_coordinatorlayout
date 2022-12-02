@@ -19,8 +19,7 @@ class TicketView(context: Context, attrs: AttributeSet?) : ConstraintLayout(cont
     lateinit var binding: TicketViewBinding
 
     init {
-        binding =
-            DataBindingUtil.bind(LayoutInflater.from(context).inflate(R.layout.ticket_view, null))!!
+        binding  = DataBindingUtil.inflate(LayoutInflater.from(context),R.layout.ticket_view,this,true)
     }
 
     override fun onWindowFocusChanged(hasWindowFocus: Boolean) {
@@ -28,7 +27,6 @@ class TicketView(context: Context, attrs: AttributeSet?) : ConstraintLayout(cont
         if (!firstLayout) {
             firstLayout = true
             binding.apply {
-
                 vBorder1.stateSave(R.id.vs1).a(1F)
                 vBorder1.stateSave(R.id.vs2).ws(3.8F).hs(3.8F).a(0F)
                 vBorder2.stateSave(R.id.vs1).a(0F)
@@ -43,9 +41,7 @@ class TicketView(context: Context, attrs: AttributeSet?) : ConstraintLayout(cont
 
     fun set(amount: Int, limit: Int, expireTime: String) {
         binding.apply {
-
             vSimple.text("领￥$amount")
-
             vDetail1.text("￥$amount")
             vDetail2.text("满$limit 可用")
             vDetail3.text("有效期至$expireTime")

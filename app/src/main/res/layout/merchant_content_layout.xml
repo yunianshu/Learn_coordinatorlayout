@@ -173,23 +173,21 @@
                     app:layout_constraintTop_toTopOf="parent">
 
                     <LinearLayout
-                        android:layout_width="wrap_content"
                         android:layout_height="match_parent"
+                        android:layout_width="wrap_content"
                         android:orientation="horizontal">
 
                         <com.example.learn.business.TicketView
                             android:id="@+id/vTicket1"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginRight="10dp" />
+                            android:layout_marginEnd="10dp" />
 
                         <com.example.learn.business.TicketView
                             android:id="@+id/vTicket2"
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginEnd="10dp"
-                            android:layout_marginRight="10dp" />
+                            android:layout_marginEnd="10dp" />
                     </LinearLayout>
                 </HorizontalScrollView>
 
